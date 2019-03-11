@@ -1,0 +1,15 @@
+<h4 class="heading">Indeterminate TreeStructure</h4>
+
+<div class="output" *ngIf="output">
+    <h6>SelectedNode: {{selectedTreeNode.label}}</h6>
+    <h6>Children: {{selectedTreeNode.children.length}}</h6>
+    <h6>Checked: {{selectedTreeNode.checked}}</h6>
+ </div>
+
+
+<app-tree-node 
+
+			[node]="tree"  	(selectEvents)="handleSelection( $event )"  [selectedNode]="selectedTreeNode">
+
+    </app-tree-node> 
+   

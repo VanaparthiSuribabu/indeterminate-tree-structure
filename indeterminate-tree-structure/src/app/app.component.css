@@ -1,0 +1,13 @@
+.heading {
+    text-align: center;
+    color: purple
+}
+.output{
+  
+height: auto;
+background-color: lightgray;
+width: 20%;
+float: right;
+text-align: center;
+margin-right: 10%;
+}

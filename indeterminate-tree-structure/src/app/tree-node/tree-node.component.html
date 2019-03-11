@@ -1,0 +1,27 @@
+<div class="container">
+
+
+    <span *ngIf="node.children.length" (click)="toggleChildren(node)" class="glyphicon"
+      [class.glyphicon-star]="!node.visible"
+      [class.glyphicon-star-empty]="node.visible">
+    </span>
+  
+  
+  <input type="checkbox" [value]="node.checked" class="style" #checkbox  [(ngModel)]="node.checked" (click)="selectEvents.emit(node)" (click)="checkParent(node,$event)" >
+  
+  <label class="label" >{{ node.label }}</label>
+ 
+  <ng-container *ngIf="node.visible">
+    <div *ngIf="node.children.length" class="children">
+      <ng-template ngFor let-child [ngForOf]="node.children">
+  
+        <app-tree-node 	(selectEvents)="selectEvents.emit( $event)" 	[selectedNode]="selectedNode"
+           
+            [node]="child">
+  
+         </app-tree-node>
+      </ng-template>
+    </div>
+  </ng-container>
+
+</div>
