@@ -4,7 +4,7 @@ Indeterminate tree structure component is created using Angular 4 and it is usef
 ![alt text](https://github.com/GnanaDeepthi/indeterminate-tree-structure/blob/master/images/image.png)
  
 
-To preview demo of Indeterminate TreeStructure component, [Click here](https://angular-wkuqps.stackblitz.io)
+To preview demo of Indeterminate TreeStructure component, [Click here](https://angular-zkfjmx.stackblitz.io)
 
  
 
